@@ -1,4 +1,5 @@
-Example images taken from: http://docs.opencv.org/2.4/doc/tutorials/imgproc/histograms/template_matching/template_matching.html
+### Credits
+Example images were taken from: http://docs.opencv.org/2.4/doc/tutorials/imgproc/histograms/template_matching/template_matching.html
 
 #### Test for template matching using node-opencv
 
