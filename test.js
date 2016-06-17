@@ -3,14 +3,11 @@
 var cv = require('opencv');
 
 cv.readImage('./Template_Matching_Original_Image.jpg', function(err, im) {
-	im.convertGrayscale();
+  if (err) return console.error('error loading image');
 
-	return cv.readImage('./Template_Matching_Template_Image.jpg', function(err, templ) {
-		templ.convertGrayscale();
+  var output = im.matchTemplate('./Template_Matching_Template_Image.jpg', 3);
 
-		// matching method (numbers) available: https://github.com/peterbraden/node-opencv/blob/13a1de4f9259b5e745021f3198a8339ac99edecd/src/Matrix.cc#L2262
-		return im.matchTemplate(templ, 3, function(result){
-			result.save('./result.jpg');
-		});
-	});
+  var matches = output.templateMatches(0.80, 1.0, 5, false);
+
+  console.log(matches);
 });
