@@ -14,3 +14,5 @@ $ cd node-openvc-templatematching-test
 $ npm install
 $ node test.js
 ````
+
+Note: There is now a matchTemplateByMatrix(...) method which allows matching against an node-opencv matrix instead a file on disk by path.
