@@ -1,6 +1,6 @@
 ## Test for template matching using node-opencv
 
-Note: There is now also a `matchTemplateByMatrix(...)` function which allows matching against an node-opencv matrix instead a file on disk by path.
+Note: There is now also a [`matchTemplateByMatrix(...)`](https://github.com/peterbraden/node-opencv/blob/4586b9bd40c75e795a11db6f898a60aa8654354c/CHANGELOG.md#enhancements) function which allows matching against an node-opencv matrix instead a file on disk by path.
 
 
 ### Credits
